@@ -1,7 +1,6 @@
 // App.jsx
 import { useState } from 'react'
-import reactLogo from './assets/Luscious.png'
-import './App.css'
+import 'src/index.css'
 
 function App() {}
  
