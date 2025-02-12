@@ -41,12 +41,36 @@
         </button>
       </div>
 
-      <!-- Right Side: Image -->
-      <div class="w-full md:w-1/2 flex justify-center md:justify-end">
-        <img src="src/image/tasty.jpg" alt="Delicious Food" class="w-3/4 md:w-[500px] lg:w-[600px] min-w-[250px] h-auto rounded-lg">
+      <!-- Right Side: Image and slide show of the images -->
+      <div class="w-full md:w-1/2 flex justify-center md:items-end">
+        <img src="src/image/tasty.jpg" alt="Delicious Food" class="w-3/4 md:w-[500px] lg:w-[600px] min-w-[250px] h-auto rounded-lg mb-4">
+
+        <!-- Slide Show -->
+         <div class="relative w-3/4 md:w-[500px] lg:w-[600px] h-[250px] overflow-hidden rounded-lg">
+          <!--the images-->
+          <img src="" >
+          <img src="" >
+          <img src="" >
+          <img src="" >
+          </div>
       </div>
       
     </main>
+    <!--codes for the slideshow-->
+    <script>
+      let slideIndex = 0;
+      const slides = document.querySelectorAll('.slide');
+
+      function showSlides() {
+        slides.forEach((slide, index) => {
+          slide.style.opacity = index === slideIndex ? '1' : '0';
+        });
+
+        slideIndex = (slideIndex + 1) % slides.length;
+      }
+
+      setInterval(showSlides, 3000);
+    </script>
 
   </body>
 </html>
