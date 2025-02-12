@@ -1,6 +1,6 @@
 // App.jsx
 import { useState } from 'react'
-import 'src/index.css'
+import './index.css'
 
 function App() {}
  
