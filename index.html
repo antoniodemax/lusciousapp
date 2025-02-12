@@ -5,40 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Luscious</title>
     <link rel="icon" type="image/png" href="src/image/luscious.png" />
-    <script></script>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="">
-    <header class="flex justify-between items-center py-1 px-5 bg-white shadow-md">
+  <body class=" h-screen">
+    
+    <!-- Header Section -->
+    <header class="flex justify-between items-center py-3 px-5 bg-white shadow-md">
       <!-- Logo -->
       <img src="src/image/luscious.png" alt="Luscious Logo" width="100" height="100" />
 
       <!-- Navigation -->
       <nav>
-        <ul class="flex items-center space-x-8 text-lg font-medium">
-          <li><a href="#" class="text-black hover:text-green-700 px-2">Home</a></li>
-          <li><a href="#" class="text-black hover:text-green-700 px-2">Shop</a></li>
-          <li><a href="#" class="text-black hover:text-green-700 px-2">About</a></li>
-          <li><a href="#" class="text-black hover:text-green-700 px-2">Sign Up</a></li>
-          <li><a href="#" class="text-black hover:text-green-700 px-2">Basket</a></li>
+        <ul class="flex items-center space-x-6 text-lg font-medium">
+          <li><a href="#" class="text-black hover:text-green-700">Home</a></li>
+          <li><a href="#" class="text-black hover:text-green-700">Shop</a></li>
+          <li><a href="#" class="text-black hover:text-green-700">About</a></li>
+          <li><a href="#" class="text-black hover:text-green-700">Sign Up</a></li>
+          <li><a href="#" class="text-black hover:text-green-700">Basket</a></li>
         </ul>
       </nav>
     </header>
 
-    <main class="max-w-7xl mx-auto px-6 py-16 flex items-start">
-      <div class="w-1/2">
-        <h2 class="text-5xl font-bold text-black mb-4 padding-top-100">
-          Best online platform shop. Enjoy the best African delicacies. <br>We deliver Anywhere. <br>Anytime
+    <!-- Main Section -->
+    <main class="max-w-7xl mx-auto px-6 py-16 flex flex-col md:flex-row items-center gap-6">
+      
+      <!-- Left Side: Text -->
+      <div class="w-full md:w-1/2 text-center md:text-left">
+        <h2 class="text-4xl md:text-5xl font-bold text-black mb-6">
+          Best online platform shop. <br>Enjoy the best African delicacies. <br>We deliver Anywhere, Anytime.
         </h2>
-        <button class="bg-orange-500 hover:bg-orange-700 text-black font-bold py-2 px-4 rounded">
+
+        <!-- Button -->
+        <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-lg text-lg w-auto mx-auto md:mx-0">
           Discover More
         </button>
       </div>
 
-      <!--image of a burger on the right side of the webpage-->
-      <div class="w-1/2 flex justify-end">
-        <img src="src/image/tasty.jpg" alt="Delicious Food " class="w-9/4 rounded-lg ">
+      <!-- Right Side: Image -->
+      <div class="w-full md:w-1/2 flex justify-center md:justify-end">
+        <img src="src/image/tasty.jpg" alt="Delicious Food" class="w-3/4 md:w-[500px] lg:w-[600px] min-w-[250px] h-auto rounded-lg">
       </div>
+      
     </main>
+
   </body>
 </html>
